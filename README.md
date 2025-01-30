@@ -1,4 +1,34 @@
 ### Adidas Webstore Shoe Data Analysis
+## Tool Used
+Microsoft Power BI
+
+## Data Used
+country_dim, shoes_dim, shoes_fact
+
+## About Data
+# country_dim 
+Contains country codes, currency, and shoe measurement metrics.
+# shoes_dim 
+Contains shoe details, including ID, name, best use case, gender, color, and image URL.
+#shoes_fact
+Contains transaction-level data, including shoe ID, price, category, size, availability, date, and country code.
+
+## Data Cleaning & Transformation:
+Ensure date columns are in Date format.
+Convert price to currency format.
+Remove any unnecessary columns like Unnamed: 0 in shoes_fact.
+
+## Create Relationships
+shoes_fact.id → shoes_dim.id (One-to-Many)
+shoes_fact.country_code → country_dim.country_code (Many-to-One)
+
+## Key Performance Indicators (KPIs)
+Total Revenue = SUM(shoes_fact[price])
+Total Sales = COUNT(shoes_fact[id])
+Average Price = AVERAGE(shoes_fact[price])
+Stock Count = SUM(shoes_fact[availability])
+Stock Count = SUM(shoes_fact[availability])
+
 ![Dashboard](https://github.com/rohini-kadam98/Adidas-Webstore-Shoe-Data-Analysis/blob/main/Adidas%20Webstore%20Dashboard.png)
 
 ## Key Insights
@@ -12,4 +42,5 @@ I recently worked on an Adidas Webstore Shoe Data Analysis to uncover key busine
 7️⃣ Since running shoes are the most popular category, Adidas can expand its product line or enhance marketing efforts for this category.                                   
 8️⃣The UK has the lowest sales (only $0.2M), showing potential for market expansion.                                                                             
 
-📊 This project helped me sharpen my Power BI skills and extract actionable insights from data!
+Thank you for reading and evaluating my repo :)
+Live Dashboard [Link]()
