@@ -1,4 +1,5 @@
 ### Adidas Webstore Shoe Data Analysis
+https://github.com/rohini-kadam98/Adidas-Webstore-Shoe-Data-Analysis/blob/main/Adidas%20Webstore%20Dashboard.png
 
 ## Key Insights
 I recently worked on an Adidas Webstore Shoe Data Analysis to uncover key business insights. Here are key findings:              
