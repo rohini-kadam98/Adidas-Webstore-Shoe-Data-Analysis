@@ -10,7 +10,7 @@ country_dim, shoes_dim, shoes_fact
 Contains country codes, currency, and shoe measurement metrics.
 ### shoes_dim 
 Contains shoe details, including ID, name, best use case, gender, color, and image URL.
-#shoes_fact
+### shoes_fact
 Contains transaction-level data, including shoe ID, price, category, size, availability, date, and country code.
 
 ### Data Cleaning & Transformation:
