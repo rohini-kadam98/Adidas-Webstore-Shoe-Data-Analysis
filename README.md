@@ -14,21 +14,22 @@ Contains shoe details, including ID, name, best use case, gender, color, and ima
 Contains transaction-level data, including shoe ID, price, category, size, availability, date, and country code.
 
 ### Data Cleaning & Transformation:
-Ensure date columns are in Date format.
-Convert price to currency format.
-Remove any unnecessary columns like Unnamed: 0 in shoes_fact.
+Ensure date columns are in Date format.                                   
+Convert price to currency format.                                      
+Remove any unnecessary columns like Unnamed: 0 in shoes_fact.                                           
 
 ### Create Relationships
-shoes_fact.id → shoes_dim.id (One-to-Many)
-shoes_fact.country_code → country_dim.country_code (Many-to-One)
+shoes_fact.id → shoes_dim.id (One-to-Many)                                           
+shoes_fact.country_code → country_dim.country_code (Many-to-One)                                           
 
 ### Key Performance Indicators (KPIs)
-Total Revenue = SUM(shoes_fact[price])
-Total Sales = COUNT(shoes_fact[id])
-Average Price = AVERAGE(shoes_fact[price])
-Stock Count = SUM(shoes_fact[availability])
-Stock Count = SUM(shoes_fact[availability])
+Total Revenue = SUM(shoes_fact[price])                                                          
+Total Sales = COUNT(shoes_fact[id])                                                       
+Average Price = AVERAGE(shoes_fact[price])                                                       
+Stock Count = SUM(shoes_fact[availability])                                                               
+Stock Count = SUM(shoes_fact[availability])                                                                       
 
+### Dashboard
 ![Dashboard](https://github.com/rohini-kadam98/Adidas-Webstore-Shoe-Data-Analysis/blob/main/Adidas%20Webstore%20Dashboard.png)
 
 ### Key Insights
