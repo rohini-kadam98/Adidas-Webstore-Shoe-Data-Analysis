@@ -23,11 +23,11 @@ shoes_fact.id → shoes_dim.id (One-to-Many)
 shoes_fact.country_code → country_dim.country_code (Many-to-One)                                           
 
 ### Key Performance Indicators (KPIs)
-*Total Revenue = SUM(shoes_fact[price])                                                          
+* Total Revenue = SUM(shoes_fact[price])                                                          
 * Total Sales = COUNT(shoes_fact[id])                                                       
-Average Price = AVERAGE(shoes_fact[price])                                                       
-Stock Count = SUM(shoes_fact[availability])                                                               
-Stock Count = SUM(shoes_fact[availability])                                                                       
+* Average Price = AVERAGE(shoes_fact[price])                                                       
+* Stock Count = SUM(shoes_fact[availability])                                                               
+* Stock Count = SUM(shoes_fact[availability])                                                                       
 
 ### Dashboard
 ![Dashboard](https://github.com/rohini-kadam98/Adidas-Webstore-Shoe-Data-Analysis/blob/main/Adidas%20Webstore%20Dashboard.png)
